@@ -1,0 +1,18 @@
+# version: "3.1"
+
+# rules:
+# - rule: Handle failed transfer via form
+#   steps:
+#     - intent: report_failed_transfer
+#     - action: failed_transfer_form
+#     - active_loop: failed_transfer_form
+
+# - rule: Submit Transction ID Form
+#   condition: 
+#     - active_loop: failed_transfer_form
+#   steps: 
+#     - action: failed_transfer_form
+#     - active_loop: null
+#     - slot_was_set:
+#       - requested_slot: null
+#     - action: failed_transfer_submit

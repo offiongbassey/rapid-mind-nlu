@@ -1,0 +1,20 @@
+version: "3.1"
+nlu:
+- intent: report_failed_transfer
+  examples: |
+    - I transferred 50,000 naira to Daniel, I was debited but it wasn't successful
+    - I sent money and I was debited but the person hasn’t received it
+    - My transfer failed, but I was charged
+    - I sent money to someone but it didn’t go through, and my account was debited
+    - I made a transfer and I haven’t gotten a reversal
+
+- intent: provide_transaction_id
+  examples: |
+    - The transaction ID is [123456789](transaction_id)
+    - My reference number is [987654321](transaction_id)
+    - It's [TXN12345](transaction_id)
+    - Here is the transaction ID: [5647382910](transaction_id)
+    - Transaction reference is [abc123xyz](transaction_id)
+
+
+

@@ -1,0 +1,63 @@
+# # stories.yml
+# version: "3.1"
+# stories:
+# - story: FAQ What is GoFree?
+#   steps:
+#     - intent: faq_whatisgofree
+#     - action: utter_faq_whatisgofree
+# - story: FAQ Is GoFree registered?
+#   steps:
+#     - intent: faq_registered
+#     - action: utter_faq_registered
+# - story: FAQ How is GoFree different?
+#   steps:
+#     - intent: faq_diff_fintech
+#     - action: utter_faq_diff_fintech
+# - story: FAQ How does GoFree charge fees?
+#   steps:
+#     - intent: faq_charge
+#     - action: utter_faq_charge
+# - story: FAQ Is my money safe?
+#   steps:
+#     - intent: faq_money_safe
+#     - action: utter_faq_money_safe
+# - story: FAQ How does GoFree make money?
+#   steps:
+#     - intent: faq_make_money
+#     - action: utter_faq_make_money
+# - story: FAQ Can I create a virtual card?
+#   steps:
+#     - intent: faq_virtual_card
+#     - action: utter_faq_virtual_card
+# - story: FAQ Can I get a transaction receipt?
+#   steps:
+#     - intent: faq_receipt
+#     - action: utter_faq_receipt
+# - story: FAQ What is KYC?
+#   steps:
+#     - intent: faq_kyc
+#     - action: utter_faq_kyc
+# - story: FAQ Do I get a wallet upon registration?
+#   steps:
+#     - intent: faq_wallet
+#     - action: utter_faq_wallet
+# - story: FAQ Is there a minimum balance?
+#   steps:
+#     - intent: faq_min_balance
+#     - action: utter_faq_min_balance
+# - story: FAQ Does GoFree do currency exchange?
+#   steps:
+#     - intent: faq_currency_exchange
+#     - action: utter_faq_currency_exchange
+# - story: FAQ Selling or shopping on GoFree
+#   steps:
+#     - intent: faq_sell_product
+#     - action: utter_faq_sell_product
+# - story: FAQ How to add money to wallet?
+#   steps:
+#     - intent: faq_add_money
+#     - action: utter_faq_add_money
+# - story: FAQ How to get help?
+#   steps:
+#     - intent: faq_help
+#     - action: utter_faq_help  

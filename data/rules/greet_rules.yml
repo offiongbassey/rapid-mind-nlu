@@ -1,0 +1,15 @@
+# rules.yml
+version: "3.1"
+rules:
+- rule: Say goodbye when the user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+- rule: Respond to bot challenge
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+- rule: Ask for clarification if message is unclear
+  steps:
+    - intent: nlu_fallback
+    - action: utter_ask_specific
