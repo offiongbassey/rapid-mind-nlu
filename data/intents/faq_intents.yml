@@ -1,56 +1,56 @@
 # version: "3.1"
 # nlu:
-# - intent: faq_whatisgofree
+# - intent: faq_whatisMunzaPay
 #   examples: |
-#     - What is GoFree?
-#     - Tell me about GoFree
-#     - What does GoFree do?
-#     - What can GoFree help with?
-#     - Explain GoFree
-#     - GoFree meaning
-#     - I'm curious about GoFree
+#     - What is MunzaPay?
+#     - Tell me about MunzaPay
+#     - What does MunzaPay do?
+#     - What can MunzaPay help with?
+#     - Explain MunzaPay
+#     - MunzaPay meaning
+#     - I'm curious about MunzaPay
 # - intent: faq_registered
 #   examples: |
-#     - Is GoFree registered?
-#     - Where is GoFree registered?
-#     - Is GoFree a registered company?
-#     - Does GoFree have official registration?
-#     - What is GoFree's registration status?
+#     - Is MunzaPay registered?
+#     - Where is MunzaPay registered?
+#     - Is MunzaPay a registered company?
+#     - Does MunzaPay have official registration?
+#     - What is MunzaPay's registration status?
 # - intent: faq_diff_fintech
 #   examples: |
-#     - How is GoFree different from other fintech apps?
-#     - What makes GoFree unique?
-#     - How does GoFree stand out from other fintech?
-#     - Why choose GoFree over other fintech?
+#     - How is MunzaPay different from other fintech apps?
+#     - What makes MunzaPay unique?
+#     - How does MunzaPay stand out from other fintech?
+#     - Why choose MunzaPay over other fintech?
 # - intent: faq_charge
 #   examples: |
-#     - How does GoFree charge for transactions?
-#     - What fees does GoFree charge?
-#     - Are there any charges on GoFree?
-#     - Does GoFree take fees?
-#     - How are fees handled on GoFree?
+#     - How does MunzaPay charge for transactions?
+#     - What fees does MunzaPay charge?
+#     - Are there any charges on MunzaPay?
+#     - Does MunzaPay take fees?
+#     - How are fees handled on MunzaPay?
 # - intent: faq_money_safe
 #   examples: |
-#     - Is my money safe with GoFree?
-#     - How secure is my money on GoFree?
-#     - Are my funds safe on GoFree?
-#     - Can I trust GoFree with my money?
+#     - Is my money safe with MunzaPay?
+#     - How secure is my money on MunzaPay?
+#     - Are my funds safe on MunzaPay?
+#     - Can I trust MunzaPay with my money?
 # - intent: faq_make_money
 #   examples: |
-#     - How does GoFree make money?
-#     - How does GoFree earn revenue?
-#     - How does GoFree generate income?
-#     - What's GoFree's business model?
+#     - How does MunzaPay make money?
+#     - How does MunzaPay earn revenue?
+#     - How does MunzaPay generate income?
+#     - What's MunzaPay's business model?
 # - intent: faq_virtual_card
 #   examples: |
-#     - Can I create a virtual card on GoFree?
-#     - Does GoFree offer virtual cards?
+#     - Can I create a virtual card on MunzaPay?
+#     - Does MunzaPay offer virtual cards?
 #     - How do I get a virtual card?
 #     - Can I have a Naira or USD virtual card?
 # - intent: faq_receipt
 #   examples: |
-#     - Can I get a transaction receipt on GoFree?
-#     - Does GoFree provide a receipt for transactions?
+#     - Can I get a transaction receipt on MunzaPay?
+#     - Does MunzaPay provide a receipt for transactions?
 #     - Will I get a receipt after a transaction?
 #     - Are transaction receipts available?
 # - intent: faq_kyc
@@ -58,7 +58,7 @@
 #     - What is KYC?
 #     - Why do you need KYC information?
 #     - What information is included in KYC?
-#     - Why does GoFree ask for KYC?
+#     - Why does MunzaPay ask for KYC?
 # - intent: faq_wallet
 #   examples: |
 #     - Do I get a wallet upon registration?
@@ -73,25 +73,89 @@
 #     - Do I have to maintain a minimum amount?
 # - intent: faq_currency_exchange
 #   examples: |
-#     - Does GoFree do currency exchange?
-#     - Can I exchange currency on GoFree?
+#     - Does MunzaPay do currency exchange?
+#     - Can I exchange currency on MunzaPay?
 #     - Is peer-to-peer currency conversion available?
 #     - How do I convert currency in the app?
 # - intent: faq_sell_product
 #   examples: |
-#     - Can I post a product for sale on GoFree?
-#     - Can I shop for products on GoFree?
-#     - Does GoFree have a marketplace?
-#     - How do I sell items on GoFree?
+#     - Can I post a product for sale on MunzaPay?
+#     - Can I shop for products on MunzaPay?
+#     - Does MunzaPay have a marketplace?
+#     - How do I sell items on MunzaPay?
 # - intent: faq_add_money
 #   examples: |
 #     - How can I add money to my wallet?
-#     - What methods to fund my GoFree wallet?
-#     - How do I deposit money into GoFree?
-#     - How do I add funds to my GoFree account?
+#     - What methods to fund my MunzaPay wallet?
+#     - How do I deposit money into MunzaPay?
+#     - How do I add funds to my MunzaPay account?
 # - intent: faq_help
 #   examples: |
 #     - What should I do if I need help?
 #     - How can I contact support?
 #     - How do I get assistance?
-#     - I need help with GoFree
+#     - I need help with MunzaPay
+
+version: "3.1"
+nlu:
+
+- intent: faq_reversal_time
+  examples: |
+    - How long does it take to reverse a transaction?
+    - When will I get my money back?
+    - What's the reversal timeframe?
+
+- intent: faq_link_bank_account
+  examples: |
+    - How do I link my bank account?
+    - Can I connect my account to the app?
+    - Link my BVN or bank
+
+- intent: faq_support_contact
+  examples: |
+    - How can I contact support?
+    - I want to speak to customer service
+    - Need help from support
+
+- intent: faq_app_security
+  examples: |
+    - Is my data safe on MunzaPay?
+    - How secure is the app?
+    - Is it safe to use this app?
+
+- intent: faq_transaction_limit
+  examples: |
+    - What's the transaction limit?
+    - How much can I send at once?
+    - Is there a daily limit on transactions?
+
+- intent: faq_update_app
+  examples: |
+    - How do I update the MunzaPay app?
+    - I think my app is outdated
+    - Where can I get the latest version?
+
+- intent: faq_reset_password
+  examples: |
+    - I forgot my password
+    - How do I reset my login details?
+    - Help me change my password
+
+- intent: faq_verification
+  examples: |
+    - How do I verify my account?
+    - What documents are needed for KYC?
+    - I'm not verified yet
+
+
+- intent: faq_withdraw_funds
+  examples: |
+    - How do I withdraw money from MunzaPay?
+    - Can I transfer funds to my bank account?
+    - I want to cash out
+
+- intent: faq_transaction_history
+  examples: |
+    - How do I view my transaction history?
+    - Can I check my recent transactions?
+    - Where is my transaction summary?

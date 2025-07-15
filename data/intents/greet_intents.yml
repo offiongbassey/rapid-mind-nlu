@@ -33,6 +33,7 @@ nlu:
     - absolutely
     - that's right
     - correct
+    - alright
 - intent: deny
   examples: |
     - no

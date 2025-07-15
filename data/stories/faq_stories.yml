@@ -1,19 +1,19 @@
 # # stories.yml
 # version: "3.1"
 # stories:
-# - story: FAQ What is GoFree?
+# - story: FAQ What is MunzaPay?
 #   steps:
-#     - intent: faq_whatisgofree
-#     - action: utter_faq_whatisgofree
-# - story: FAQ Is GoFree registered?
+#     - intent: faq_whatisMunzaPay
+#     - action: utter_faq_whatisMunzaPay
+# - story: FAQ Is MunzaPay registered?
 #   steps:
 #     - intent: faq_registered
 #     - action: utter_faq_registered
-# - story: FAQ How is GoFree different?
+# - story: FAQ How is MunzaPay different?
 #   steps:
 #     - intent: faq_diff_fintech
 #     - action: utter_faq_diff_fintech
-# - story: FAQ How does GoFree charge fees?
+# - story: FAQ How does MunzaPay charge fees?
 #   steps:
 #     - intent: faq_charge
 #     - action: utter_faq_charge
@@ -21,7 +21,7 @@
 #   steps:
 #     - intent: faq_money_safe
 #     - action: utter_faq_money_safe
-# - story: FAQ How does GoFree make money?
+# - story: FAQ How does MunzaPay make money?
 #   steps:
 #     - intent: faq_make_money
 #     - action: utter_faq_make_money
@@ -45,11 +45,11 @@
 #   steps:
 #     - intent: faq_min_balance
 #     - action: utter_faq_min_balance
-# - story: FAQ Does GoFree do currency exchange?
+# - story: FAQ Does MunzaPay do currency exchange?
 #   steps:
 #     - intent: faq_currency_exchange
 #     - action: utter_faq_currency_exchange
-# - story: FAQ Selling or shopping on GoFree
+# - story: FAQ Selling or shopping on MunzaPay
 #   steps:
 #     - intent: faq_sell_product
 #     - action: utter_faq_sell_product
@@ -61,3 +61,39 @@
 #   steps:
 #     - intent: faq_help
 #     - action: utter_faq_help  
+
+version: "3.1"
+stories:
+
+
+- story: Link Account and Contact Support
+  steps:
+    - intent: faq_link_bank_account
+    - action: utter_faq_link_bank_account
+    - intent: faq_support_contact
+    - action: utter_faq_support_contact
+
+- story: Password Reset Story
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: faq_reset_password
+    - action: utter_faq_reset_password
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: KYC and Transaction History
+  steps:
+    - intent: faq_verification
+    - action: utter_faq_verification
+    - intent: faq_transaction_history
+    - action: utter_faq_transaction_history
+
+- story: FAQ What is MunzaPay?
+  steps:
+    - intent: faq_whatisMunzaPay
+    - action: utter_faq_whatisMunzaPay
+    - intent: affirm
+    - action: utter_thanks
+  
+    

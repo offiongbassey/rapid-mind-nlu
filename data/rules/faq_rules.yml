@@ -1,0 +1,63 @@
+version: "3.1"
+rules:
+- rule: Handle bank account linking
+  steps:
+    - intent: faq_link_bank_account
+    - action: utter_faq_link_bank_account
+  
+- rule: Handle reversal time question
+  steps:
+    - intent: faq_reversal_time
+    - action: utter_faq_reversal_time
+
+- rule: Handle support contact query
+  steps:
+    - intent: faq_support_contact
+    - action: utter_faq_support_contact
+
+- rule: Handle security concern
+  steps:
+    - intent: faq_app_security
+    - action: utter_faq_app_security
+
+
+- rule: Handle transaction limit query
+  steps:
+    - intent: faq_transaction_limit
+    - action: utter_faq_transaction_limit
+
+- rule: Handle app update question
+  steps:
+    - intent: faq_update_app
+    - action: utter_faq_update_app
+
+- rule: Handle password reset
+  steps:
+    - intent: faq_reset_password
+    - action: utter_faq_reset_password
+
+- rule: Handle verification query
+  steps:
+    - intent: faq_verification
+    - action: utter_faq_verification
+
+- rule: Handle withdrawal question
+  steps:
+    - intent: faq_withdraw_funds
+    - action: utter_faq_withdraw_funds
+
+- rule: Handle transaction history question
+  steps:
+    - intent: faq_transaction_history
+    - action: utter_faq_transaction_history
+
+
+- rule: Handle WhatisMunzaPay Questios
+  steps:
+    - intent: faq_whatisMunzaPay
+    - action: utter_faq_whatisMunzaPay
+  
+
+
+
+

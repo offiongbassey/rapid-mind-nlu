@@ -9,7 +9,17 @@ intents:
   - mood_unhappy
   - bot_challenge
   - thanks
-  # - faq_whatisgofree
+  - faq_reversal_time
+  - faq_link_bank_account
+  - faq_support_contact
+  - faq_app_security
+  - faq_transaction_limit
+  - faq_update_app
+  - faq_reset_password
+  - faq_verification
+  - faq_withdraw_funds
+  - faq_transaction_history
+  - faq_whatisMunzaPay
   # - faq_registered
   # - faq_diff_fintech
   # - faq_charge
@@ -48,7 +58,7 @@ responses:
     - text: "Hey there! How can I assist you today?"
     - text: "Hello! Ready to help you out."
     - text: "Hi! What can I do for you today?"
-    - text: "Welcome to GoFree. How may I help?"
+    - text: "Welcome to MunzaPay. How may I help?"
     - text: "Hello! Feel free to ask me anything."
 
   utter_goodbye:
@@ -60,8 +70,8 @@ responses:
 
   utter_iamabot:
     - text: "I am a bot, here to assist you."
-    - text: "Yep! I’m your GoFree assistant bot."
-    - text: "You're chatting with GoFree's smart assistant."
+    - text: "Yep! I’m your MunzaPay assistant bot."
+    - text: "You're chatting with MunzaPay's smart assistant."
     - text: "I’m not human, but I’m here to help."
     - text: "Just a helpful bot, ready to support you."
 
@@ -69,7 +79,7 @@ responses:
     - text: "That's awesome to hear!"
     - text: "Yay! I'm glad you're feeling great!"
     - text: "That's great! Let me know if you need anything else."
-    - text: "Nice! GoFree is here if you need support."
+    - text: "Nice! MunzaPay is here if you need support."
     - text: "Wonderful! I'm here for anything you need."
 
   utter_cheer_up:
@@ -104,52 +114,84 @@ responses:
     - text: "Sorry, can you be more specific?"
     - text: "I’m not sure what you mean. Mind rephrasing?"
     - text: "Could you try explaining that in another way?"
+  
 
-  # utter_faq_whatisgofree:
-  #   - text: "GoFree is an app that merges Commerce, Fintech, and Social experience for Gen Zs and Millennials."
-  #   - text: "It’s a platform designed to connect your money, lifestyle, and social life in one app."
-  #   - text: "GoFree bridges the gap between financial services, shopping, and messaging."
-  #   - text: "It’s your one-stop app for sending money, chatting, and shopping."
-  #   - text: "Think of GoFree as banking, shopping, and chatting – all in one super app."
+  utter_faq_reversal_time:
+    - text: "Reversals typically take between 24 to 48 hours depending on your bank."
+
+  utter_faq_link_bank_account:
+    - text: "You can link your bank account by navigating to 'Profile' > 'Linked Accounts'. Follow the steps to add your account or BVN."
+
+  utter_faq_support_contact:
+    - text: "You can contact support via live chat in the app or send an email to support@munzapay.com."
+
+  utter_faq_app_security:
+    - text: "MunzaPay uses bank-level encryption and multi-factor authentication to keep your data secure."
+
+  utter_faq_transaction_limit:
+    - text: "Basic users have a ₦50,000 daily limit. Verified users can transact up to ₦500,000. Visit your profile to upgrade."
+
+  utter_faq_update_app:
+    - text: "Visit your app store (Play Store or App Store) and search for MunzaPay to download the latest version."
+
+  utter_faq_reset_password:
+    - text: "Click 'Forgot Password' on the login screen and follow the steps to reset your password."
+  
+  utter_faq_verification:
+    - text: "To verify your account, upload a valid ID and selfie under 'Profile' > 'Verify Account'. Verification takes 24–48 hours."
+
+  utter_faq_withdraw_funds:
+    - text: "To withdraw, go to 'Wallet' > 'Withdraw' and select your linked bank account."
+
+  utter_faq_transaction_history:
+    - text: "You can view your history under 'Wallet' > 'Transaction History'. Filters are available for easy navigation."
+
+
+  utter_faq_whatisMunzaPay:
+    - text: "MunzaPay is an app that merges Commerce, Fintech, and Social experience for Gen Zs and Millennials."
+    - text: "It’s a platform designed to connect your money, lifestyle, and social life in one app."
+    - text: "MunzaPay bridges the gap between financial services, shopping, and messaging."
+    - text: "It’s your one-stop app for sending money, chatting, and shopping."
+    - text: "Think of MunzaPay as banking, shopping, and chatting – all in one super app."
 
   # utter_faq_registered:
-  #   - text: "Yes. GoFree is fully registered in the USA and Nigeria."
+  #   - text: "Yes. MunzaPay is fully registered in the USA and Nigeria."
   #   - text: "Absolutely! We're registered both in the USA and Nigeria under CAC."
-  #   - text: "Yes, GoFree operates legally and is fully registered with relevant authorities."
+  #   - text: "Yes, MunzaPay operates legally and is fully registered with relevant authorities."
   #   - text: "We’re registered in the U.S. (Delaware) and in Nigeria (Kwara State)."
-  #   - text: "Yes. GoFree is a legitimate entity with international and local registrations."
+  #   - text: "Yes. MunzaPay is a legitimate entity with international and local registrations."
 
   # utter_faq_diff_fintech:
   #   - text: "We combine social, commerce, and fintech into one experience."
-  #   - text: "Unlike others, GoFree lets you shop, chat, and transact in one secure platform."
-  #   - text: "GoFree integrates blockchain for enhanced security and combines multiple services."
+  #   - text: "Unlike others, MunzaPay lets you shop, chat, and transact in one secure platform."
+  #   - text: "MunzaPay integrates blockchain for enhanced security and combines multiple services."
   #   - text: "We go beyond payments – it’s a lifestyle hub."
-  #   - text: "With GoFree, your wallet, friends, and store are all in one app."
+  #   - text: "With MunzaPay, your wallet, friends, and store are all in one app."
 
   # utter_faq_charge:
-  #   - text: "Transactions within GoFree are free!"
+  #   - text: "Transactions within MunzaPay are free!"
   #   - text: "No charge for in-app transfers. External ones attract minimal fees."
   #   - text: "Only external transfers cost a token – way lower than others."
   #   - text: "We keep fees minimal and transparent."
-  #   - text: "GoFree promotes free and fast internal transfers."
+  #   - text: "MunzaPay promotes free and fast internal transfers."
 
   # utter_faq_money_safe:
   #   - text: "Yes. Your funds are secured with encryption and blockchain."
   #   - text: "We protect every wallet with bank-level security."
   #   - text: "Absolutely. Security is our top priority."
-  #   - text: "GoFree uses the latest technology to keep your money safe."
+  #   - text: "MunzaPay uses the latest technology to keep your money safe."
   #   - text: "End-to-end encryption plus blockchain = maximum protection."
 
   # utter_faq_make_money:
   #   - text: "We earn through transaction commissions and investments."
-  #   - text: "GoFree makes revenue from fees and investment channels."
+  #   - text: "MunzaPay makes revenue from fees and investment channels."
   #   - text: "Transaction margins and fintech services fuel our growth."
   #   - text: "We don’t charge users much – we earn via operations."
   #   - text: "Revenue comes from usage, commissions, and returns."
 
   # utter_faq_virtual_card:
   #   - text: "Yes, you can create Naira and Dollar virtual cards easily."
-  #   - text: "GoFree offers virtual cards for local and global use."
+  #   - text: "MunzaPay offers virtual cards for local and global use."
   #   - text: "Need a virtual card? Create one in your app instantly."
   #   - text: "Enjoy secure transactions with our Naira and Dollar cards."
   #   - text: "Yes. More currencies are also coming soon."
@@ -178,35 +220,35 @@ responses:
   # utter_faq_min_balance:
   #   - text: "No minimum balance required. Use as you wish!"
   #   - text: "You're not forced to keep any fixed balance."
-  #   - text: "Zero balance? No problem with GoFree."
+  #   - text: "Zero balance? No problem with MunzaPay."
   #   - text: "Use your wallet freely, no restrictions."
-  #   - text: "GoFree doesn’t impose balance limitations."
+  #   - text: "MunzaPay doesn’t impose balance limitations."
 
   # utter_faq_currency_exchange:
   #   - text: "Yes, we offer secure peer-to-peer (P2P) currency exchange."
-  #   - text: "Exchange money across currencies safely with GoFree."
+  #   - text: "Exchange money across currencies safely with MunzaPay."
   #   - text: "Convert money easily with our P2P feature."
-  #   - text: "GoFree simplifies international currency transactions."
+  #   - text: "MunzaPay simplifies international currency transactions."
   #   - text: "Yes. Currency exchange is built right in."
 
   # utter_faq_sell_product:
   #   - text: "Yes. List your products and get paid directly."
   #   - text: "Sell and shop right inside the app."
   #   - text: "Your customers can pay into your wallet instantly."
-  #   - text: "Post, sell, and shop in one place — GoFree!"
+  #   - text: "Post, sell, and shop in one place — MunzaPay!"
   #   - text: "Yes. E-commerce is part of our super app."
 
   # utter_faq_add_money:
   #   - text: "You can top-up via bank transfer or debit card."
   #   - text: "Use Flutterwave, Google Pay, Apple Pay, or bank transfer."
   #   - text: "Top-ups are instant and flexible."
-  #   - text: "GoFree supports multiple funding methods."
+  #   - text: "MunzaPay supports multiple funding methods."
   #   - text: "You can add funds securely using your preferred method."
 
   # utter_faq_help:
   #   - text: "You can reach us through Chat With Us in the app."
-  #   - text: "Need help? DM us on Twitter @joingofree."
-  #   - text: "We’re also available via email: support@joingofree.com"
+  #   - text: "Need help? DM us on Twitter @joinMunzaPay."
+  #   - text: "We’re also available via email: support@joinMunzaPay.com"
   #   - text: "Tap help in the app or visit our website to chat live."
   #   - text: "Support is always ready – whichever way you choose."
   
