@@ -1,0 +1,37 @@
+# version: "3.1"
+nlu:
+- intent: faq_whatisMunzaPay
+  examples: |
+   - What is MunzaPay?
+   - Tell me about MunzaPay
+   - What does MunzaPay do?
+   - What can MunzaPay help with?
+   - Explain MunzaPay
+   - MunzaPay meaning
+   - I'm curious about MunzaPay
+
+- intent: faq_registered
+  examples: |
+    - Is MunzaPay registered?
+    - Where is MunzaPay registered?
+    - Is MunzaPay a registered company?
+    - Does MunzaPay have official registration?
+    - What is MunzaPay's registration status?
+
+
+
+- intent: faq_diff_fintech
+  examples: |
+   - How is MunzaPay different from other fintech apps?
+   - What makes MunzaPay unique?
+   - How does MunzaPay stand out from other fintech?
+   - Why choose MunzaPay over other fintech?
+
+- intent: faq_money_safe
+  examples: |
+    - Is my money safe with MunzaPay?
+    - How secure is my money on MunzaPay?
+    - Are my funds safe on MunzaPay?
+    - Can I trust MunzaPay with my money?
+
+

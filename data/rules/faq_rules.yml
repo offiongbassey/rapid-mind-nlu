@@ -1,23 +1,21 @@
 version: "3.1"
-stories:
+rules:
 
-- story: User asks what MunzaPay is
+- rule: Respond to FAQ - What is MunzaPay
   steps:
     - intent: faq_whatisMunzaPay
     - action: utter_faq_whatisMunzaPay
 
-- story: User asks about MunzaPay registration
+- rule: Respond to FAQ - Is MunzaPay Registered
   steps:
     - intent: faq_registered
     - action: utter_faq_registered
-
-- story: User asks how MunzaPay differs from other fintech
+- rule: Respond to FAQ - Difference from other fintech
   steps:
     - intent: faq_diff_fintech
     - action: utter_faq_diff_fintech
 
-- story: User asks if their money is safe
+- rule: Respond to FAQ - Is my money safe
   steps:
     - intent: faq_money_safe
     - action: utter_faq_money_safe
- 
