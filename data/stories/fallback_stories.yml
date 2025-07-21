@@ -1,32 +1,5 @@
 version: "3.1"
 stories:
-# - story: User accepts escalation - account hacked
-#   steps:
-#     - intent: account_hacked
-#     - action: utter_escalate_to_agent
-#     - intent: affirm
-#     - action: action_escalate_to_human
-
-# - story: User declines escalation - account hacked
-#   steps:
-#     - intent: account_hacked
-#     - action: utter_escalate_to_agent
-#     - intent: deny
-#     - action: utter_okay_no_human_needed
-
-# - story: User accepts escalation - fraud
-#   steps:
-#     - intent: fraud_alert
-#     - action: utter_escalate_to_agent
-#     - intent: affirm
-#     - action: action_escalate_to_human
-
-# - story: User declines escalation - fraud
-#   steps:
-#     - intent: fraud_alert
-#     - action: utter_escalate_to_agent
-#     - intent: deny
-#     - action: utter_okay_no_human_needed
 
 - story: Offer live agent after complaint
   steps:
