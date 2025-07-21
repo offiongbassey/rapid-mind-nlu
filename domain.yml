@@ -10,6 +10,13 @@ intents:
   - provide_transaction_id
   - unsatisfied_complaint
 
+
+  - faq_whatisMunzaPay
+  - faq_registered
+  - faq_diff_fintech
+  - faq_money_safe
+
+
 entities:
   - transaction_id
   - amount
@@ -73,8 +80,35 @@ responses:
     - text: "Let me get you the help you need. Would you like to speak directly with a customer support representative?"
     - text: "I’d like to help further, but this might be best handled by a live agent. Should I connect you?"
 
+  utter_faq_whatisMunzaPay:
+   - text: "MunzaPay is an app that merges Commerce, Fintech, and Social experience for Gen Zs and Millennials."
+   - text: "It’s a platform designed to connect your money, lifestyle, and social life in one app."
+   - text: "MunzaPay bridges the gap between financial services, shopping, and messaging."
+   - text: "It’s your one-stop app for sending money, chatting, and shopping."
+   - text: "Think of MunzaPay as banking, shopping, and chatting – all in one super app."
 
-  
+  utter_faq_registered:
+    - text: "Yes. MunzaPay is fully registered in the USA and Nigeria."
+    - text: "Absolutely! We're registered both in the USA and Nigeria under CAC."
+    - text: "Yes, MunzaPay operates legally and is fully registered with relevant authorities."
+    - text: "We’re registered in the U.S. (Delaware) and in Nigeria (Kwara State)."
+    - text: "Yes. MunzaPay is a legitimate entity with international and local registrations."
+
+  utter_faq_diff_fintech:
+    - text: "We combine social, commerce, and fintech into one experience."
+    - text: "Unlike others, MunzaPay lets you shop, chat, and transact in one secure platform."
+    - text: "MunzaPay integrates blockchain for enhanced security and combines multiple services."
+    - text: "We go beyond payments – it’s a lifestyle hub."
+    - text: "With MunzaPay, your wallet, friends, and store are all in one app."
+ 
+  utter_faq_money_safe:
+    - text: "Yes. Your funds are secured with encryption and blockchain."
+    - text: "We protect every wallet with bank-level security."
+    - text: "Absolutely. Security is our top priority."
+    - text: "MunzaPay uses the latest technology to keep your money safe."
+    - text: "End-to-end encryption plus blockchain = maximum protection."
+
+
   utter_ask_transaction_id:
     - text: "I'm really sorry to hear that. Could you please provide the transaction ID or reference number so I can check?"
 
