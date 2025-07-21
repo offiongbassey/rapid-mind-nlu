@@ -5,10 +5,12 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
   - thanks
+  - report_failed_transfer
+  - provide_transaction_id
+  - unsatisfied_complaint
+
+
   # - faq_whatisgofree
   # - faq_registered
   # - faq_diff_fintech
@@ -24,19 +26,20 @@ intents:
   # - faq_sell_product
   # - faq_add_money
   # - faq_help
-  - report_failed_transfer
-  - provide_transaction_id
 
 entities:
   - transaction_id
+  - amount
 
 slots:
   transaction_id:
     type: text
-    influence_conversation: true
+    influence_conversation: false
     mappings:
       - type: from_entity
         entity: transaction_id
+        conditions:
+          - active_loop: failed_transfer_form
 
 forms:
   failed_transfer_form:
@@ -58,32 +61,6 @@ responses:
     - text: "Bye for now. Stay safe."
     - text: "Talk to you later!"
 
-  utter_iamabot:
-    - text: "I am a bot, here to assist you."
-    - text: "Yep! I’m your GoFree assistant bot."
-    - text: "You're chatting with GoFree's smart assistant."
-    - text: "I’m not human, but I’m here to help."
-    - text: "Just a helpful bot, ready to support you."
-
-  utter_happy:
-    - text: "That's awesome to hear!"
-    - text: "Yay! I'm glad you're feeling great!"
-    - text: "That's great! Let me know if you need anything else."
-    - text: "Nice! GoFree is here if you need support."
-    - text: "Wonderful! I'm here for anything you need."
-
-  utter_cheer_up:
-    - text: "I'm sorry to hear that. Here's something to cheer you up!"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
-    - text: "Cheer up! You're doing better than you think 😊"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
-    - text: "Stay strong. Here's a smile for you 😄"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
-    - text: "Better days are coming. Sending good vibes 💪"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
-    - text: "Don’t worry, you’ve got this 💙"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
-
   utter_did_that_help:
     - text: "Did that help you?"
     - text: "Was this information useful?"
@@ -104,6 +81,14 @@ responses:
     - text: "Sorry, can you be more specific?"
     - text: "I’m not sure what you mean. Mind rephrasing?"
     - text: "Could you try explaining that in another way?"
+  
+  utter_escalate_to_agent:
+    - text: "I'm really sorry to hear that. Would you like to speak with a live agent for further assistance?"
+    - text: "That sounds serious. I can connect you to a live agent right away. Would you like me to do that?"
+    - text: "I understand how frustrating this must be. Should I connect you with a human support agent?"
+    - text: "Sorry you're experiencing this. Would you prefer to talk to a live agent for faster help?"
+    - text: "Let me get you the help you need. Would you like to speak directly with a customer support representative?"
+    - text: "I’d like to help further, but this might be best handled by a live agent. Should I connect you?"
 
   # utter_faq_whatisgofree:
   #   - text: "GoFree is an app that merges Commerce, Fintech, and Social experience for Gen Zs and Millennials."
@@ -209,6 +194,9 @@ responses:
   #   - text: "We’re also available via email: support@joingofree.com"
   #   - text: "Tap help in the app or visit our website to chat live."
   #   - text: "Support is always ready – whichever way you choose."
+
+
+
   
   utter_ask_transaction_id:
     - text: "I'm really sorry to hear that. Could you please provide the transaction ID or reference number so I can check?"
@@ -218,9 +206,13 @@ responses:
 
   utter_show_transaction_id:
     - text: "Thanks! I've received the transaction ID: {TransactionId}"
+  
+  utter_okay_no_human_needed:
+    - text: "Alright, if you need help later, just let me know!"
 
 actions: 
   - failed_transfer_submit
+  - action_escalate_to_human
 
 session_config:
   session_expiration_time: 60
