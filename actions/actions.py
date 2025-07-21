@@ -3,7 +3,7 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, AllSlotsReset
 
 
 class ValidationTransactionForm(Action):
@@ -45,5 +45,24 @@ class ActionSubmit(Action):
 
         dispatcher.utter_message(**custom_response)
 
-        return []
+        return [AllSlotsReset()]
 
+
+class ActionEscalateToHuman(Action):
+    def name(self) -> str:
+        return "action_escalate_to_human"
+
+    async def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: dict):
+        # Optional: extract user ID, last intent, etc.
+        user_id = tracker.sender_id
+        last_intent = tracker.latest_message.get("intent", {}).get("name")
+
+        # You can call an API or log to DB here
+        print(f"Escalation requested by {user_id} due to {last_intent}")
+        custom_response = {
+            "type": "live-support",
+            "text": "Connecting you to a live agent now...",
+        }
+
+        dispatcher.utter_message(**custom_response)
+        return []

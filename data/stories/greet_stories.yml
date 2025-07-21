@@ -5,14 +5,10 @@ stories:
   steps:
     - intent: greet
     - action: utter_greet
-    - intent: mood_great
-    - action: utter_happy
 - story: greeting sad path
   steps:
     - intent: greet
     - action: utter_greet
-    - intent: mood_unhappy
-    - action: utter_cheer_up
     - action: utter_did_that_help
     - intent: deny
     - action: utter_goodbye

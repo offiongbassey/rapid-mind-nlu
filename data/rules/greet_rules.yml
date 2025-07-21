@@ -5,10 +5,6 @@ rules:
   steps:
     - intent: goodbye
     - action: utter_goodbye
-- rule: Respond to bot challenge
-  steps:
-    - intent: bot_challenge
-    - action: utter_iamabot
 - rule: Ask for clarification if message is unclear
   steps:
     - intent: nlu_fallback

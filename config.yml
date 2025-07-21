@@ -23,7 +23,7 @@ pipeline:
     ambiguity_threshold: 0.1
 
 policies:
-  - name: MemoizationPolicy
+  # - name: MemoizationPolicy
   - name: RulePolicy
   - name: TEDPolicy
     max_history: 5

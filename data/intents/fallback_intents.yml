@@ -1,0 +1,20 @@
+version: "3.1"
+nlu: 
+        
+- intent: unsatisfied_complaint
+  examples: |
+    - I need to talk to a live person
+    - I’m not happy with your service
+    - I need to speak with customer care
+    - I want to talk to someone about an issue
+    - Can I talk to a human, please?
+    - Please connect me to a live agent
+    - I just want to talk to someone
+    - I have a serious issue I want resolved
+    - I need help with something urgent
+    - I want a real person to look into this
+    - I don’t want to chat with a bot anymore
+    - I’d like to speak with a support agent
+    - Is there someone I can speak to?
+    - Can you transfer me to human support?
+    - Let me speak to a representative

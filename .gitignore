@@ -48,7 +48,9 @@ events.db
 
 
 # Rasa cache
-rasa/cache/
+# Rasa cache
+.rasa/cache/
+.rasa/tmp/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
