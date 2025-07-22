@@ -18,8 +18,6 @@ nlu:
     - Does MunzaPay have official registration?
     - What is MunzaPay's registration status?
 
-
-
 - intent: faq_diff_fintech
   examples: |
    - How is MunzaPay different from other fintech apps?
